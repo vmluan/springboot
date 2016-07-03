@@ -2,6 +2,7 @@ package com.tvmas.backend.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 
 import com.mongodb.Mongo;
@@ -12,7 +13,9 @@ import com.mongodb.MongoClient;
  * Now it is for DEV only.
  */
 @Configuration
+@Profile("devmongo")
 public class MongoDBConfig extends AbstractMongoConfiguration {
+	
 
 	@Override
 	public String getDatabaseName() {
