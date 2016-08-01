@@ -1,0 +1,42 @@
+<html>
+<head>
+
+ <script src="autocomplete.js"></script>
+
+</head>
+<body onLoad="initData('selFirm', 'firmId');initData('selUser', 'userId')">
+<div>Enter the first three letters of a Firms and select a match from the menu.</div>
+<form> 
+Firms:
+<input type="text" name="Firm" id="firmId" onKeyUp="findIt('selFirm',this, 'forFirm')"><br>
+<select id="selFirm" size = "5" style = "width: 174px;">
+        <option value="s0001">Adams</option>        
+        <option value="s0002">bol</option>
+        <option value="s0003">col</option>
+        <option value="s0004">Adder</option>
+		<option value="s0005">dol</option>
+        <option value="s0006">Cooper</option>
+		<option value="s0007">Saooper</option>
+		<option value="s0008">Adamlemo</option>   
+<!--and so on and so forth-->
+  </select> 
+  
+  <br/>
+ Users: 
+ <input type="text" name="User" id="userId" onKeyUp="findIt('selUser',this, 'forUser')"><br>
+  <select id="selUser" size = "5" style = "width: 174px;">
+        <option value="a0001">Adams</option>        
+        <option value="a0002">bol</option>
+        <option value="a0003">col</option>
+        <option value="a0004">Adder</option>
+		<option value="a0005">dol</option>
+        <option value="a0006">Cooper</option>
+		<option value="a0007">Saooper</option>
+		<option value="a0008">Adamlemo</option>   
+<!--and so on and so forth-->
+  </select> 
+  
+  
+</form>
+</body>
+</html>
